@@ -59,3 +59,21 @@ def find_best_subarray(nums, k):
 
 # Input: nums = [5], k = 1
 # Output: 5.00000
+
+    def findMaxAverage(nums : [], k : int) -> float:
+        curr = 0
+        for i in range(k):
+            curr += nums[i]
+
+        ans = curr
+
+        for i in range(k, len(nums)):
+            
+            
+            curr += nums[i] - nums[i - k]
+            ans = max(ans, curr)
+
+        return ans/k
+
+
+
