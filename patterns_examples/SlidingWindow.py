@@ -17,7 +17,7 @@ def find_length(nums, k):
     return ans
 
 # finding the subArray of products that is less than K
-def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
+def numSubarrayProductLessThanK(self, nums: [int], k: int) -> int:
     if k <= 1:
         return 0
 
@@ -27,7 +27,7 @@ def numSubarrayProductLessThanK(self, nums: List[int], k: int) -> int:
     for right in range(len(nums)):
         curr *= nums[right]
         while curr >= k:
-            curr //= nums[left]
+            curr //= nums[left] 
             left += 1
         ans += right - left + 1
 
