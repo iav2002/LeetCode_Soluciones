@@ -3,3 +3,4 @@ Un espacio en español para poder explicar y recordar patrones de leetcode, estr
 
 
 Con un enlace a videos explicativos graficamente!
+link youtube
